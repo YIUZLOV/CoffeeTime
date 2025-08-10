@@ -1,0 +1,101 @@
+/* Сброс базовых отступов и полей */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Настройка блочной модели для всех элементов */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Плавный скролл */
+html,
+:has(:target) {
+    scroll-behavior: smooth;
+}
+
+/* Сброс списков */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Сброс ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Сброс кнопок */
+button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Сброс изображений */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Сброс таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Сброс форм */
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+/* Сброс типографики */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+/* Сброс цитат */
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/* Сброс всех HTML5 элементов */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
