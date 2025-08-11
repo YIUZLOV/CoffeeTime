@@ -3,17 +3,20 @@
   z-index: 0;
   width: 100%;
   height: auto;
-  padding: 100px 72px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: start;
-  justify-content: center;
+  padding-block: 100px;
   background: url('../../images/hero/hero-cover.png') no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--color-light);
   text-wrap: balance;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  justify-content: center;
 }
 
 .hero__subtitle {
@@ -48,7 +51,10 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 50px 20px;
+    padding-block: 50px;
+  }
+
+  .hero__wrapper {
     align-items: center;
     text-align: center;
   }
